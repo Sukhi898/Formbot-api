@@ -11,7 +11,7 @@ const createForm = async (req, res) => {
     }
 
     const uniqueId = uuidv4();
-    const uniqueLink = `http://localhost:5174/form/unique/${uniqueId}`;
+    const uniqueLink = `https://form-builder-bot.netlify.app//form/unique/${uniqueId}`;
 
     const form = new Form({
       formName,
