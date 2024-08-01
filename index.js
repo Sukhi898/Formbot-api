@@ -10,7 +10,12 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://your-frontend-domain.com", // Replace with your frontend domain
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(UserRouter);
@@ -26,6 +31,7 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(port, () => {
+  console.log(process.env.MONGODB_URL);
   console.log(`Server is running on http://localhost:${port}`);
   mongoose
     .connect(process.env.MONGODB_URL)
