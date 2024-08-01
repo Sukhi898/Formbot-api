@@ -13,7 +13,6 @@ const port = process.env.PORT || 4000;
 app.use(
   cors({
   origin: "https://chatbot-frontend-319w.onrender.com"
-    credentials: true,
   })
 );
 app.use(express.json());
