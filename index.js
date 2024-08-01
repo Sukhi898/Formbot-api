@@ -12,7 +12,7 @@ const port = process.env.PORT || 4000;
 
 app.use(
   cors({
-    origin: "https://your-frontend-domain.com", // Replace with your frontend domain
+  origin: "https://chatbot-frontend-319w.onrender.com"
     credentials: true,
   })
 );
