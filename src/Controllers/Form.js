@@ -11,7 +11,7 @@ const createForm = async (req, res) => {
     }
 
     const uniqueId = uuidv4();
-    const uniqueLink = `https://chatbot-frontend-319w.onrender.com/form/unique/${uniqueId}`;
+    const uniqueLink = `https://main--formbot-connected.netlify.app/form/unique/${uniqueId}`;
 
     const form = new Form({
       formName,
