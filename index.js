@@ -12,7 +12,7 @@ const port = process.env.PORT || 4000;
 
 app.use(
   cors({
-  origin: "https://chatbot-frontend-319w.onrender.com"
+  origin: "https://formbot-api-nwz1.onrender.com"
   })
 );
 app.use(express.json());
