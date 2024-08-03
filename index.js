@@ -12,7 +12,7 @@ const port = process.env.PORT || 4000;
 
 app.use(
   cors({
-  origin: "https://formbot-api-nwz1.onrender.com"
+  origin: "http://ec2-13-60-104-236.eu-north-1.compute.amazonaws.com"
   })
 );
 app.use(express.json());
