@@ -12,7 +12,10 @@ const port = process.env.PORT || 4000;
 
 app.use(
   cors({
-  origin: "https://ec2-13-60-104-236.eu-north-1.compute.amazonaws.com"
+    origin: [
+      'https://ec2-13-60-104-236.eu-north-1.compute.amazonaws.com',
+      'https://form-bot-app.netlify.app'
+    ]
   })
 );
 app.use(express.json());
